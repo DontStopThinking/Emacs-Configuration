@@ -9,7 +9,10 @@
   (split-window-horizontally)
   (scroll-bar-mode -1)
   (menu-bar-mode -1)
-  (toggle-frame-maximized))
+  (toggle-frame-maximized)
+  (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+  (load-theme 'default-black t)
+  (set-face-attribute 'default nil :family "Liberation Mono"))
 
 ; Coding style
 (defun shantanu-set-coding-style ()
